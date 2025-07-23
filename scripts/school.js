@@ -40,6 +40,7 @@ function animateCounters() {
 
   counters.forEach(counter => {
     const element = document.getElementById(counter.id);
+    if (!element) return; // Skip if element not found
     let count = 0;
     const step = Math.ceil(counter.target / 100);
     const interval = setInterval(() => {
@@ -61,9 +62,12 @@ const observer = new IntersectionObserver((entries) => {
       observer.unobserve(entry.target);
     }
   });
-}, { threshold: 0.5 });
+}, { threshold: 0.3 }); // Lowered threshold for better visibility trigger
 
-document.querySelectorAll('.overview').forEach(element => observer.observe(element));
+const overviewSection = document.querySelector('.overview');
+if (overviewSection) {
+  observer.observe(overviewSection);
+}
 
 // Smooth scroll for in-page nav links only
 document.querySelectorAll('.nav-link').forEach(link => {
@@ -72,7 +76,10 @@ document.querySelectorAll('.nav-link').forEach(link => {
     if (href.startsWith('#')) {
       e.preventDefault();
       const targetId = href.substring(1);
-      document.getElementById(targetId)?.scrollIntoView({ behavior: 'smooth' });
+      const targetElement = document.getElementById(targetId);
+      if (targetElement) {
+        targetElement.scrollIntoView({ behavior: 'smooth' });
+      }
       navMenu.classList.remove('active');
     }
     // Allow default navigation for page links (e.g., about.html)
