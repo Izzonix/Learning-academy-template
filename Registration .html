@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration - Sunrise Academy</title>
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/registration.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header id="header">
+    <div class="logo">
+      <img src="/images/logo.png" alt="Sunrise Academy Logo" class="logo-img">
+      <span>Sunrise Academy</span>
+    </div>
+    <div class="hamburger" id="hamburger">☰</div>
+    <nav id="nav-menu" class="nav-menu">
+      <div class="close-btn" id="close-btn">✕</div>
+      <ul>
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="#" class="nav-link active">Registration</a></li>
+        <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Registration & Admission</h1>
+      <p>Join our vibrant community at Sunrise Academy</p>
+    </div>
+  </section>
+
+  <main class="registration-section">
+    <section class="instructions">
+      <h2>How to Apply</h2>
+      <p>Begin your journey with Sunrise Academy by downloading our registration form or scheduling a visit to meet our admissions team and explore our campus.</p>
+    </section>
+
+    <section class="download-form">
+      <h2>Download Registration Form</h2>
+      <p>Download and complete the form below. Submit it in person or via email to info@sunriseacademy.com.</p>
+      <a href="downloads/registration-form.pdf" class="cta-button" download>📄 Download PDF</a>
+    </section>
+
+    <section class="schedule-visit">
+      <h2>Schedule a Visit</h2>
+      <p>Experience our campus firsthand. Fill out the form below to arrange your visit.</p>
+      <div class="visit-form-container">
+        <form id="visit-form" class="visit-form" action="#" method="POST">
+          <div class="form-group">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="date">Preferred Visit Date:</label>
+            <input type="date" id="date" name="date" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Additional Notes (optional):</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+          </div>
+          <button type="submit" class="cta-button">Submit Request</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <section class="cta">
+    <h2>Ready to Join Us?</h2>
+    <div class="cta-buttons">
+      <a href="#" class="cta-button">Apply Now</a>
+      <a href="contact.html" class="cta-button">Contact Us</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-column">
+        <h3>Quick Links</h3>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="#">Admissions</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-column">
+        <h3>Contact</h3>
+        <p>Email: <a href="mailto:info@sunriseacademy.com">info@sunriseacademy.com</a></p>
+        <p>Phone: <a href="tel:+256700000000">+256 700 000 000</a></p>
+        <p>Location: Kampala, Uganda</p>
+      </div>
+      <div class="footer-column">
+        <h3>Follow Us</h3>
+        <div class="social-links">
+          <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2025 Sunrise Academy. All rights reserved.
+    </div>
+  </footer>
+
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script src="scripts/school.js"></script>
+  <script src="scripts/registration.js"></script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+/* Main Content Section */
+.registration-section {
+  max-width: 900px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Section Styling */
+.instructions, .download-form, .schedule-visit {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+h2 {
+  color: #003366;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+}
+
+p {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.6;
+  max-width: 700px;
+  margin: 0 auto 1.5rem;
+}
+
+/* Form Section */
+.visit-form-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.visit-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-group {
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  font-size: 1rem;
+  color: #003366;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #003366;
+  box-shadow: 0 0 5px rgba(0,51,102,0.2);
+}
+
+textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+  .registration-section {
+    margin: 2rem 1rem;
+    padding: 1.5rem;
+  }
+
+  .form-group label {
+    font-size: 0.9rem;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="date"],
+  textarea {
+    padding: 10px;
+  }
+}

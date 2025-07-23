@@ -1,0 +1,153 @@
+/* Overview Section */
+.overview {
+  padding: 80px 20px;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+.counters {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.counter-box {
+  background: #003366;
+  color: white;
+  padding: 40px;
+  border-radius: 15px;
+  transition: transform 0.3s;
+}
+
+.counter-box:hover {
+  transform: translateY(-10px);
+}
+
+.counter-box h2 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+/* Mission & Vision */
+.mission {
+  padding: 80px 20px;
+  background: white;
+}
+
+.mission-content {
+  max-width: 900px;
+  margin: auto;
+}
+
+.mission p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+/* Principal */
+.principal {
+  padding: 80px 20px;
+  background: #f9f9f9;
+}
+
+.principal-content {
+  max-width: 900px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.principal-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.principal p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+/* Programs */
+.programs {
+  padding: 80px 20px;
+  background: white;
+}
+
+.program-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.program-card {
+  background: #003366;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: 600;
+  transition: transform 0.3s;
+}
+
+.program-card:hover {
+  transform: scale(1.05);
+}
+
+/* Gallery Preview */
+.gallery-preview {
+  padding: 80px 20px;
+  background: #f9f9f9;
+}
+
+.gallery-thumbs {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.gallery-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: transform 0.3s;
+}
+
+.gallery-img:hover {
+  transform: scale(1.05);
+}
+
+.gallery-link {
+  color: #003366;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.gallery-link:hover {
+  text-decoration: underline;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .principal-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .counters {
+    flex-direction: column;
+    align-items: center;
+  }
+}
