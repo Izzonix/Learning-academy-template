@@ -1,4 +1,3 @@
-```javascript
 const hamburger = document.getElementById('hamburger');
 const closeBtn = document.getElementById('close-btn');
 const navMenu = document.getElementById('nav-menu');
@@ -76,7 +75,6 @@ document.querySelectorAll('.nav-link').forEach(link => {
       document.getElementById(targetId)?.scrollIntoView({ behavior: 'smooth' });
       navMenu.classList.remove('active');
     }
-    // Allow normal navigation for page links (e.g., about.html)
+    // Allow default navigation for page links (e.g., about.html)
   });
 });
-```
