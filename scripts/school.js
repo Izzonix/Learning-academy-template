@@ -1,3 +1,4 @@
+```javascript
 const hamburger = document.getElementById('hamburger');
 const closeBtn = document.getElementById('close-btn');
 const navMenu = document.getElementById('nav-menu');
@@ -65,12 +66,17 @@ const observer = new IntersectionObserver((entries) => {
 
 document.querySelectorAll('.overview').forEach(element => observer.observe(element));
 
-// Smooth scroll for nav links
+// Smooth scroll for in-page nav links only
 document.querySelectorAll('.nav-link').forEach(link => {
   link.addEventListener('click', (e) => {
-    e.preventDefault();
-    const targetId = link.getAttribute('href').substring(1);
-    document.getElementById(targetId)?.scrollIntoView({ behavior: 'smooth' });
-    navMenu.classList.remove('active');
+    const href = link.getAttribute('href');
+    if (href.startsWith('#')) {
+      e.preventDefault();
+      const targetId = href.substring(1);
+      document.getElementById(targetId)?.scrollIntoView({ behavior: 'smooth' });
+      navMenu.classList.remove('active');
+    }
+    // Allow normal navigation for page links (e.g., about.html)
   });
 });
+```
