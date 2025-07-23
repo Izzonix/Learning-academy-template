@@ -8,6 +8,7 @@
   text-align: center;
   color: white;
   position: relative;
+  background-color: #003366; /* Fallback color */
 }
 
 .hero::before {
@@ -96,36 +97,6 @@
   transform: translateY(0);
 }
 
-/* CTA */
-.cta {
-  padding: 80px 20px;
-  background: linear-gradient(90deg, #003366, #005599);
-  text-align: center;
-  color: white;
-}
-
-.cta-buttons {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-.cta-button {
-  background: white;
-  color: #003366;
-  padding: 15px 30px;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: 700;
-  transition: background 0.3s, color 0.3s;
-}
-
-.cta-button:hover {
-  background: #002244;
-  color: white;
-}
-
 /* Responsive Design */
 @media (max-width: 768px) {
   .hero h1 {
@@ -139,4 +110,4 @@
   .gallery-item img {
     height: 200px;
   }
-}
+  }
