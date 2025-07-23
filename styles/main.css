@@ -91,7 +91,7 @@ header.hidden {
 
 /* Hero Section */
 .hero {
-  background: url('Izzonix/Learning-academy-template/tree/main') no-repeat center/cover;
+  background: url('https://Izzonix.github.io/Learning-academy-template/images/hero-bg.jpg') no-repeat center/cover;
   height: 70vh;
   display: flex;
   align-items: center;
