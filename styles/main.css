@@ -86,7 +86,7 @@ header.hidden {
 
 /* Hero Section */
 .hero {
-  background: url('/images/hero-bg.jpg') no-repeat center/cover;
+  background: url('images/hero-bg.jpg') no-repeat center/cover;
   height: 70vh;
   display: flex;
   align-items: center;
