@@ -84,6 +84,11 @@ header.hidden {
   border-radius: 5px;
 }
 
+.nav-link.active {
+  background: rgba(255,255,255,0.3);
+  border-radius: 5px;
+}
+
 /* Hero Section */
 .hero {
   background: url('/images/hero-bg.jpg') no-repeat center/cover;
@@ -94,6 +99,7 @@ header.hidden {
   text-align: center;
   color: white;
   position: relative;
+  background-color: #003366; /* Fallback color */
 }
 
 .hero::before {
@@ -137,18 +143,32 @@ header.hidden {
 }
 
 .cta-button {
+  display: inline-block;
   background: white;
   color: #003366;
   padding: 15px 30px;
   border-radius: 5px;
   text-decoration: none;
   font-weight: 700;
-  transition: background 0.3s, color 0.3s;
+  transition: background 0.3s, color 0.3s, transform 0.3s;
 }
 
 .cta-button:hover {
   background: #002244;
   color: white;
+  transform: translateY(-2px);
+}
+
+button.cta-button {
+  border: none;
+  cursor: pointer;
+}
+
+button.cta-button:disabled {
+  background: #ccc;
+  color: #666;
+  cursor: not-allowed;
+  transform: none;
 }
 
 /* Footer */
@@ -183,7 +203,7 @@ footer {
 }
 
 .footer-column p {
-  color: white; /* Changed to white for consistency */
+  color: white;
   margin-bottom: 8px;
 }
 
@@ -248,4 +268,4 @@ footer {
     flex-direction: column;
     align-items: center;
   }
-}
+  }
