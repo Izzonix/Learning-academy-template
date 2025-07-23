@@ -91,7 +91,6 @@ header.hidden {
 
 /* Hero Section */
 .hero {
-  background: url('https://Izzonix.github.io/Learning-academy-template/images/hero-bg.jpg') no-repeat center/cover;
   height: 70vh;
   display: flex;
   align-items: center;
@@ -100,6 +99,9 @@ header.hidden {
   color: white;
   position: relative;
   background-color: #003366; /* Fallback color */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .hero::before {
@@ -125,6 +127,31 @@ header.hidden {
 .hero p {
   font-size: 1.2rem;
   margin-bottom: 30px;
+}
+
+/* Page-Specific Hero Backgrounds */
+.hero-home {
+  background-image: url('https://username.github.io/repository-name/images/hero-bg.jpg');
+}
+
+.hero-about {
+  background-image: url('https://username.github.io/repository-name/images/about-hero.jpg');
+  height: 50vh;
+}
+
+.hero-registration {
+  background-image: url('https://username.github.io/repository-name/images/registration-hero.jpg');
+  height: 50vh;
+}
+
+.hero-gallery {
+  background-image: url('https://username.github.io/repository-name/images/gallery-hero.jpg');
+  height: 50vh;
+}
+
+.hero-contact {
+  background-image: url('https://username.github.io/repository-name/images/contact-hero.jpg');
+  height: 50vh;
 }
 
 /* CTA */
@@ -261,6 +288,13 @@ footer {
   }
 
   .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero-about h1,
+  .hero-registration h1,
+  .hero-gallery h1,
+  .hero-contact h1 {
     font-size: 2rem;
   }
 
